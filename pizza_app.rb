@@ -1,13 +1,27 @@
 def build_pizza()
 	puts "How many pizzas would you like?" 
 	pizza_count = gets.chomp.to_i
-	price = 0
+	price = 10
 	# puts pizza_count.class
 	pizza_count.times do
-	price = price + 10	
 	meat = meat().sample
+	if meat == "pepperoni"
+		price = price + 2
+	elsif meat == "sausage"
+		price = price + 2
+	end
+	puts meat
 	# p "Meat sample is #{meat}" 
 	cheese = cheese().sample
+	if cheese == "mozzarella"
+		price = price + 2
+	elsif cheese == "cheddar"
+		price = price + 2
+	elsif cheese == "romano"
+		price = price + 2
+	end
+	puts cheese
+	
 	# p "Cheese sampla is #{cheese}"
 		vegetables = vegetables().sample
 		crust = crust().sample
@@ -35,4 +49,5 @@ end
 def size()
 	size = ["small", "medium", "large"]
 end
+
  	build_pizza()
