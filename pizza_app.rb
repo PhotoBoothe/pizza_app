@@ -9,6 +9,12 @@ def build_pizza()
 		price = price + 2
 	elsif meat == "sausage"
 		price = price + 2
+	elsif meat == "ham"
+		price = price + 2
+	elsif meat == "bacon"
+		price = price + 2
+	elsif meat == "hamburger"
+		price = price + 2
 	end
 	puts meat
 	# p "Meat sample is #{meat}" 
