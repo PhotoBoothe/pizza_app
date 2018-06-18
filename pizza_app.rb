@@ -29,7 +29,7 @@ def vegetables()
 	vegetables = ["onions","mushrooms", "green peppers"]
 end
 def crust()
-	crust = ["thin", "deep dish", "stuffed crust"]
+	crust = ["thin crust", "deep dish", "stuffed crust"]
 end
 
 def size()
