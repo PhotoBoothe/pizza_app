@@ -14,7 +14,7 @@ def build_pizza()
 		size = size().sample
 		puts "This is your #{size}, #{crust} pizza with #{meat}, #{cheese}, and #{vegetables}."
 	end
-	puts "Total price is #{price}"
+	puts "Your total price is $#{price}.  Thank you for your order!"
 end
 
 def meat()
