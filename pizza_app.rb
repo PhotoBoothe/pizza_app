@@ -1,8 +1,9 @@
 def build_pizza()
 	puts "How many pizzas would you like?" 
 	pizza_count = gets.chomp.to_i
-	price = 10
-	# puts pizza_count.class
+	puts pizza_count.class
+	price = 0
+	price = pizza_count * 10
 	pizza_count.times do
 	meat = meat().sample
 	if meat == "pepperoni"
@@ -34,7 +35,7 @@ def build_pizza()
 		size = size().sample
 		puts "This is your #{size}, #{crust} pizza with #{meat}, #{cheese}, and #{vegetables}."
 	end
-	puts "Your total price is $#{price}.  Thank you for your order!"
+	puts "Your total price is $#{price = price + 10}.  Thank you for your order!"
 end
 
 def meat()
