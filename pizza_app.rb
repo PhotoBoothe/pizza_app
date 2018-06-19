@@ -1,7 +1,7 @@
 def build_pizza()
 	puts "How many pizzas would you like?" 
 	pizza_count = gets.chomp.to_i
-	puts pizza_count.class
+	# puts pizza_count.class
 	price = 0
 	price = pizza_count * 10
 	pizza_count.times do
@@ -17,7 +17,7 @@ def build_pizza()
 	elsif meat == "hamburger"
 		price = price + 2
 	end
-	puts meat
+	# puts meat
 	# p "Meat sample is #{meat}" 
 	cheese = cheese().sample
 	if cheese == "mozzarella"
@@ -27,7 +27,7 @@ def build_pizza()
 	elsif cheese == "romano"
 		price = price + 2
 	end
-	puts cheese
+	# puts cheese
 	
 	# p "Cheese sampla is #{cheese}"
 		vegetables = vegetables().sample
